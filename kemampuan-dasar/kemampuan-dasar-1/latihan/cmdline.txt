@@ -1,0 +1,10 @@
+cd 
+ls
+ls -r
+ls-al
+ls -a
+rm filename
+mv filename new_location
+mkdir name
+rmdir name
+mv dirname dirnewname
