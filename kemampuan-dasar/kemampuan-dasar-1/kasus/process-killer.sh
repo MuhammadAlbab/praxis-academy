@@ -1,3 +1,4 @@
-ps -aux |grep -i "firefox"
-pidof firefox
-sudo kill -9 19729 
+echo "Masukan nama program: "
+read monggo
+ps ax | grep $monggo | awk '{print $1}' 
+kill `pidof $monggo`
