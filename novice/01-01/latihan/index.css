@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    text-align: center;
+}
+
+div button{
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.con-but{
+    text-align: center;
+}
