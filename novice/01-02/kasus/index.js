@@ -1,4 +1,4 @@
-function findLarger(){
+function kasus1(){
     console.log("KASUS 1")
     i = 5
     j = 10
@@ -11,31 +11,42 @@ function findLarger(){
     }
     console.log("")
     
-    findSign() //KASUS-2
+    kasus2() 
     console.log("")
 
-    sortNumber() //KASUS-3
+    kasus3() 
     console.log("")
 
-    largeOfFive() //KASUS-4
+    kasus4() 
     console.log("")
 
-    evenOdd() //KASUS-5
+    kasus5() 
     console.log("")
 
-    avgMarksStudents() //KASUS-6
+    kasus6() 
     console.log("")
 
-    iteratesInteger() //KASUS-7
+    kasus7() 
     console.log("")
 
-    happyNumber() //KASUS-8
-    //console.log("")
+    kasus8() 
+    console.log("")
+
+    kasus9()
+    console.log("")
+
+    kasus10()
+    console.log("")
+
+    kasus11()
+    console.log("")
+
+    kasus12()
 }
-findLarger() //KASUS-1
+kasus1()
 
 
-function findSign(){
+function kasus2(){
     console.log("KASUS 2")
     x = 3
     y = -7
@@ -53,7 +64,7 @@ function findSign(){
     }
 }
 
-function sortNumber(){
+function kasus3(){
     console.log("KASUS 3")
     let x,y,z
     x = 0
@@ -80,7 +91,7 @@ function sortNumber(){
     } 
 }
 
-function largeOfFive(){
+function kasus4(){
     console.log("KASUS 4")
     a=-5;
     b=-2;
@@ -100,7 +111,7 @@ function largeOfFive(){
     }
 }
 
-function evenOdd(){
+function kasus5(){
     console.log("KASUS 5")
     for (i = 0; i <=15; i++){
         if ([i] % 2 == 0){
@@ -111,7 +122,7 @@ function evenOdd(){
     }
 }
 
-function avgMarksStudents(){
+function kasus6(){
     console.log("KASUS 6")
     let studentsMarks = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]];
     let avgMarks = 0
@@ -136,7 +147,7 @@ function avgMarksStudents(){
 
 }
 
-function iteratesInteger(){
+function kasus7(){
     console.log("KASUS 7")
     let i
     
@@ -153,6 +164,90 @@ function iteratesInteger(){
     }
 }
 
-function happyNumber(){
-    console.log("happynumber")
+function kasus8(){
+    console.log("KASUS 8")
+    function happy_number(num) {
+        var m, n ;
+        var c = [] ;
+
+        while(num != 1 && c[num] !== true) {
+            c[num] = true ;
+            m = 0 ;
+            while (num > 0) {
+                n = num % 10 ;
+                m += n * n ;
+                num = (num  - n) / 10 ;
+            }
+            num = m ;
+        }
+        return (num == 1) ;
+    }
+
+    var cnt = 5;
+    var num = 1;
+    var f5 = ''; 
+    while(cnt-- > 0) {
+        while(!happy_number(num))
+            num++ ;
+        f5 = f5+(num + ", ") ;
+        num++ ;
+    }
+    console.log('First 5 happy numbers are : '+f5);
+}
+
+function kasus9(){
+    console.log("KASUS 9")
+    function three_digit_armstrong_number() {
+     for (var i = 1; i < 10; ++i) {
+       for (var j = 0; j < 10; ++j) {
+            for (var k = 0; k < 10; ++k){
+              var pow = (Math.pow(i,3) + Math.pow(j,3) + Math.pow(k,3));
+              var plus = (i * 100 + j * 10 +  k);
+              if (pow == plus) {     
+                 console.log(pow);
+                }
+             }
+           }
+        }
+      }
+    three_digit_armstrong_number();   
+}
+
+function kasus10(){
+    console.log("KASUS 10")
+    var i, j, chr
+    for (i = 1; i <= 6; i++){
+       for( j = 1; j < i; j++){
+        chr = chr+("*")
+       }
+    console.log(chr)
+    chr=""
+    }
+}
+
+function kasus11(){
+    console.log('KASUS 11')
+    var a = 2154 //First number
+    var b = 458 //Second number 
+    var gcd;
+    while (a!=b){
+        if (a>b){
+            a = a -b;
+        }else{
+            b = b - a;
+        }
+    }
+    gcd = a;
+    console.log(gcd);
+}
+
+function kasus12(){
+    console.log('KASUS 12')
+    var sum = 0;
+    for (var x = 0; x < 1000; x++){
+        if (x % 3 === 0 || x % 5 === 0){
+        sum += x;
+        }
+    }
+    console.log(sum);
 }
