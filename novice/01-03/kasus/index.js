@@ -58,7 +58,7 @@ kasus4()
 console.log("")
 
 function kasus5(){
-    console.log("KASUS-5") // Temperatur konversi
+    console.log("KASUS-5") // Temperatur celcius.farenheit konversi
     function calciusToFahrenheit(){
         let celsTemp = 20
         let farTemp = (celsTemp * 9/5) + 32
