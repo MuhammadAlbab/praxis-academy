@@ -44,6 +44,25 @@ kasus1()
 console.log("")
 
 function kasus2(){
+    console.log("Kamus indonesia-english")
+    function engDic(){
+        let vocab = new Map()
+        vocab.set("kopi", "coffee")
+        vocab.set("makan", "eat")
+        vocab.set("bosan", "bored")
+        vocab.set("menguap", "yawn")
+
+        let kata = prompt("masukan kata")
+        console.log(kata)
+        
+        let cariKata = vocab.has(kata)
+        if (cariKata == true){
+            console.log(vocab.get(kata))
+        }else{
+            console.log("tidak ada dikamus");
+        }
+    }
+    engDic()
 
 }
 kasus2()
