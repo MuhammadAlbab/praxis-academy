@@ -1,3 +1,4 @@
+//kasus cat
 class myKitty {
     constructor(tiredness, hunger, lonliness,  happiness){
         this.tiredness = tiredness
