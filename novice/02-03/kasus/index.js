@@ -1,14 +1,6 @@
 const axios = require('axios').default
 
-// axios.get("https://jsonplaceholder.typicode.com/posts")
-// .then(dataPost => dataPost.data)
-// .then(dataPost.data forEach(element => {
-
-//     })
-//     cconsole.log("Id :", element.id)
-// }
-
-
+//Async / Await
 async function getData(){
     const dataUser = await axios.get("https://jsonplaceholder.typicode.com/users")
     dataUser.data.forEach(element => {
@@ -18,3 +10,14 @@ async function getData(){
     })
 }
 getData()
+
+
+//Promise
+axios.get("https://jsonplaceholder.typicode.com/posts")
+.then(dataPost => dataPost.data)
+.then(dataPost => {
+        dataPost.forEach(element => {
+        console.log("Id :", element.id)
+        console.log("Title :", element.title)
+    })
+})
