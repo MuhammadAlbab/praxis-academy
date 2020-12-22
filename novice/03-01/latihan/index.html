@@ -4,26 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+
+    <style>
+      .container{
+        text-align: center;
+      }
+
+      .con-tab{
+        display: flex;
+        justify-content: center;
+      }
+
+      tr, th, td {
+        padding: 5px;
+        border: 2px solid black;
+      }
+
+      #lihat-table{
+        margin-bottom: 10px;
+      }
+    </style>
+
 </head>
 <body>
-
-    <h1>Mountains</h1>
-
-    <table>
-        <tr>
-          <th>name</th>
-          <th>height</th>
-          <th>place</th>
-        </tr>
-        <tr>
-          <td>Kilimanjaro</td>
-          <td>5895</td>
-          <td>Tanzania</td>
-        </tr>
-      </table>
-
-      <div id="mountains"></div>
-
+  <div class="container">
+    <h1>Latihan DOM</h1>
+    <h2>Gunung</h2>
+    <button id="lihat-table">LIHAT DATA GUNUNG</button>
+  </div>
+  <div class="con-tab">
+    <div id="mountains"></div>
+  </div>
 <script src="index.js"></script>
 </body>
 </html>
