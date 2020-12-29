@@ -14,8 +14,9 @@
 
             <v-divider></v-divider>
             <v-list dense nav>
-                <router-link to="/menusatu">
-                <v-list-item>
+                
+                <v-list-item
+                link to="/menusatu">
                     <v-list-icon>
                         <v-icon>mdi-star</v-icon>
                     </v-list-icon>
@@ -23,10 +24,11 @@
                         <v-list-title>Menu Satu</v-list-title>
                     </v-list-content>
                 </v-list-item>
-                </router-link>
+                
 
-                <router-link to="/menudua">
-                <v-list-item>
+                
+                <v-list-item
+                link to="/menudua">
                     <v-list-icon>
                         <v-icon>mdi-message</v-icon>
                     </v-list-icon>
@@ -34,10 +36,9 @@
                         <v-list-title>Menu Dua</v-list-title>
                     </v-list-content>
                 </v-list-item>
-                </router-link>
 
-                <router-link to="/menutiga">
-                <v-list-item>
+                <v-list-item
+                link to="/menutiga">
                     <v-list-icon>
                         <v-icon>mdi-flash</v-icon>
                     </v-list-icon>
@@ -45,7 +46,6 @@
                         <v-list-title>Menu Tiga</v-list-title>
                     </v-list-content>
                 </v-list-item>
-                </router-link>
                 
 
             </v-list>
@@ -53,9 +53,9 @@
 
         <v-app-bar app>
             <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-            <router-link to="/">
-            <v-toolbar-title class="judul">Praxis Academy</v-toolbar-title>
-            </router-link>
+            <v-btn 
+            text 
+            link to="/">Praxis Academy</v-btn>
         </v-app-bar>
     </nav>
 </template>
